@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EDM</title>
+    <link href="https://fonts.googleapis.com/css?family=Notable" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/edmcss.css" media="screen and (min-width: 992px)">
+    <link rel="stylesheet" href="css/edmcsssmall.css" media="screen and (min-width: 320px) and (max-width: 600px)">
+    <link rel="stylesheet" href="css/edmcsstablet.css" media='screen and (max-width: 768px)'>
+</head>
+
+<body bgcolor="#000">
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- Navigation -->
+    <div id="nav">
+        <p id="navigation" onclick="closenav()"><i class="fas fa-headphones"></i></p>
+        <br><br><br>
+        <div id="edmtext">
+            <p id="edm1" onclick="chain()">THE CHAINSMOKERS</p>
+            <p id="edm2" onclick="diplo()">DIPLO</p>
+            <p id="edm3" onclick="gryffin()">GRYFFIN</p>
+            <p id="edm4" onclick="mello()">MARSHMELLO</p>
+            <p id="edm5" onclick="holo()">SAN HOLO</p>
+            <p id="edm6" onclick="zedd()">ZEDD</p>
+            <p id="edm7" onclick="music()">MUSIC</p>
+        </div>
+    </div>
+
+    <div id="zedd">
+        <p id="zeddp" style="cursor:pointer;" onclick="opennav()">ZEDD</p>
+        <div id="zeddright">
+            <div id="zeddimg">
+                <img src="img/zedd.png" alt="Zedd">
+            </div>
+        </div>
+        <div id="zeddleft">
+            <p>Anton Zaslavski, more commonly known under his stage name Zedd, is a Grammy-Award winning Russian-German
+                electronic music producer. Classically trained in music, he started playing the piano at the age of
+                four; his musical career began in 2009, and he signed with Interscope Records a few years after,
+                releasing his debut album, Clarity, in October.
+                <br><br>
+                He has worked with English singer Louisa Rose Allen (known under the name Foxes) on "Clarity", and
+                Hayley Williams—lead singer of the American rock band Paramore—on "Stay the Night", among others. His
+                second album, True Colors, was released in the U.S. in May 2015.
+            </p>
+        </div>
+    </div>
+
+    <script src="js/modaledm.js"></script>
+    <script>
+        $(function () {
+            setTimeout(function () {
+                $('#zedd').fadeIn(1000);
+                $('#zedd').style.display = 'block';
+            }, 500)
+        })
+    </script>
+</body>
+
+</html>

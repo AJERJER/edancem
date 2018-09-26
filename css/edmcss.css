@@ -1,0 +1,1547 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+
+/* Main */
+#main {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#mainp {
+    cursor: pointer;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 200px;
+    font-family: 'Notable', sans-serif;
+}
+
+/* Navigation */
+#nav {
+    display: none;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    background-size: cover;
+    z-index: 2;
+}
+
+#navigation {
+    display: none;
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    margin-right: 20px;
+    right: 0;
+}
+
+#edmtext {
+    display: none;
+}
+
+#edm1,
+#edm2,
+#edm3,
+#edm4,
+#edm5,
+#edm6,
+#edm7 {
+    cursor: default;
+    margin-left: 50px;
+    color: #fff;
+    font-family: 'Notable', sans-serif;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+#edm1::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: width 1s;
+    cursor: default;
+}
+
+#edm1:hover::after,
+#edm1:focus::after {
+    width: 35.5%;
+    transition: width 1s;
+    cursor: default;
+}
+
+#edm2::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: width 1s;
+    cursor: default;
+}
+
+#edm2:hover::after,
+#edm2:focus::after {
+    width: 10.5%;
+    transition: width 1s;
+    cursor: default;
+}
+
+#edm3::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: width 1s;
+    cursor: default;
+}
+
+#edm3:hover::after,
+#edm3:focus::after {
+    width: 14.5%;
+    transition: width 1s;
+    cursor: default;
+}
+
+#edm4::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: width 1s;
+    cursor: default;
+}
+
+#edm4:hover::after,
+#edm4:focus::after {
+    width: 23.5%;
+    transition: width 1s;
+    cursor: default;
+}
+
+#edm5::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: width 1s;
+    cursor: default;
+}
+
+#edm5:hover::after,
+#edm5:focus::after {
+    width: 17.5%;
+    transition: width 1s;
+    cursor: default;
+}
+
+#edm6::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: width 1s;
+    cursor: default;
+}
+
+#edm6:hover::after,
+#edm6:focus::after {
+    width: 9.6%;
+    transition: width 1s;
+    cursor: default;
+}
+
+#edm7::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: width 1s;
+    cursor: default;
+}
+
+#edm7:hover::after,
+#edm7:focus::after {
+    width: 10.2%;
+    transition: width 1s;
+    cursor: default;
+}
+
+/* Diplo */
+#diplo {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('http://runthetrap.com/wp-content/uploads/2015/06/Diplo-III.jpg')no-repeat;
+    background-size: cover;
+    filter: grayscale(1);
+}
+
+#diplop {
+    color: #fff;
+    font-family: 'Notable', sans-serif;
+    font-size: 150px;
+    letter-spacing: 100px;
+    text-align: center;
+    margin-top: 0;
+}
+
+#diploimg img {
+    filter: blur(0.5px);
+    width: 35%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: scaleimg 30s infinite;
+}
+
+#diploleft {
+    width: 65%;
+    margin-top: 200px;
+}
+
+#diploleft p {
+    padding: 10px;
+    background: #000;
+    text-align: justify;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-family: 'Contrail One', cursive;
+}
+
+/* Zedd */
+#zedd {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.tribalmixes.com/pic/dj/new/455874.jpg')no-repeat;
+    background-size: cover;
+    filter: grayscale(1);
+}
+
+#zeddp {
+    color: #fff;
+    font-family: 'Notable', sans-serif;
+    font-size: 150px;
+    letter-spacing: 100px;
+    text-align: center;
+    margin-top: 0;
+}
+
+#zeddimg img {
+    filter: blur(0.5px);
+    width: 35%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: scaleimg 30s infinite;
+}
+
+#zeddleft {
+    width: 65%;
+    margin-top: 200px;
+}
+
+#zeddleft p {
+    padding: 10px;
+    background: #000;
+    text-align: justify;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-family: 'Contrail One', cursive;
+}
+
+/* Marshmello */
+#marshmello {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('http://weraveyou.com/wp-content/uploads/2018/06/Marshmello-Live-Concert-DJ.jpg')no-repeat;
+    background-size: cover;
+    filter: grayscale(1);
+}
+
+#marshmellop {
+    color: #fff;
+    font-family: 'Notable', sans-serif;
+    font-size: 150px;
+    letter-spacing: 6px;
+    text-align: center;
+    margin-top: 0;
+}
+
+#marshmelloimg img {
+    filter: blur(0.5px);
+    width: 35%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: scaleimg 30s infinite;
+}
+
+#marshmelloleft {
+    width: 65%;
+    margin-top: 200px;
+}
+
+#marshmelloleft p {
+    padding: 10px;
+    background: #000;
+    text-align: justify;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-family: 'Contrail One', cursive;
+}
+
+/* Gryffin */
+#gryffin {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://i1.wp.com/uofsdmedia.com/wp-content/uploads/2017/12/gryffin.jpg')no-repeat;
+    background-size: cover;
+    filter: grayscale(1);
+}
+
+#gryffinp {
+    color: #fff;
+    font-family: 'Notable', sans-serif;
+    font-size: 150px;
+    letter-spacing: 60px;
+    text-align: center;
+    margin-top: 0;
+}
+
+#gryffinimg img {
+    filter: blur(0.5px);
+    width: 35%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: scaleimg 30s infinite;
+}
+
+#gryffinleft {
+    width: 65%;
+    margin-top: 200px;
+}
+
+#gryffinleft p {
+    padding: 10px;
+    background: #000;
+    text-align: justify;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-family: 'Contrail One', cursive;
+}
+
+/* San Holo */
+#sanholo {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('http://204ksp3os7r62w5qhokpkxci.wpengine.netdna-cdn.com/wp-content/uploads/focusedsan.jpg')no-repeat;
+    background-size: cover;
+    filter: grayscale(1);
+}
+
+#sanholop {
+    color: #fff;
+    font-family: 'Notable', sans-serif;
+    font-size: 150px;
+    text-align: center;
+    margin-top: 0;
+}
+
+#sanholoimg img {
+    filter: blur(0.5px);
+    width: 35%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: scaleimg 30s infinite;
+}
+
+#sanhololeft {
+    width: 65%;
+    margin-top: 200px;
+}
+
+#sanhololeft p {
+    padding: 10px;
+    background: #000;
+    text-align: justify;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-family: 'Contrail One', cursive;
+}
+
+/* The Chainsmokers */
+#chainsmokers {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.edmtunes.com/wp-content/uploads/2018/06/Chainsmokers_Webster_2_15_14-714.jpg') center center no-repeat;
+    background-size: cover;
+    filter: grayscale(1);
+}
+
+#chainsmokersp {
+    color: #fff;
+    font-family: 'Notable', sans-serif;
+    font-size: 100px;
+    text-align: center;
+}
+
+#chainsmokersimg img {
+    filter: blur(0.5px);
+    width: 35%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: scaleimg 30s infinite;
+}
+
+#chainsmokersleft {
+    width: 65%;
+    margin-top: 200px;
+}
+
+#chainsmokersleft p {
+    padding: 10px;
+    background: #000;
+    text-align: justify;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-family: 'Contrail One', cursive;
+}
+
+/* Music */
+
+#musics{
+    display: none;
+}
+
+#musicmenu{
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Notable',sans-serif;
+    letter-spacing: 5px;
+}
+
+#musicmenu::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: width 1s;
+    cursor: default;
+}
+
+#musicmenu:hover::after,
+#musicmenu:focus::after {
+    width: 9%;
+    transition: width 1s;
+    cursor: default;
+}
+
+/* The Chainsmokers */
+.container1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 440px;
+    grid-gap: 85px;
+}
+
+.container1 .card {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container1 .card .img-box {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.container1 .card:hover .img-box {
+    opacity: 0.8;
+}
+
+.container1 .card .img-box img {
+    width: 100%;
+}
+
+
+.container1 .card .content {
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.container1 .card:hover .content {
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.container1 .card .content h2 {
+    font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    padding: 0;
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px #fff;
+}
+
+.container1 .card .content p {
+    font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px #fff;
+}
+
+.container1 .card .content ul li {
+    list-style: none;
+}
+
+.container1 .card .content li {
+    margin-left: 45px;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 10px;
+}
+
+.container2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 440px;
+    grid-gap: 85px;
+}
+
+.container2 .card {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container2 .card .img-box {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.container2 .card:hover .img-box {
+    opacity: 0.8;
+}
+
+.container2 .card .img-box img {
+    width: 100%;
+}
+
+
+.container2 .card .content {
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.container2 .card:hover .content {
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.container2 .card .content h2 {
+    font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    padding: 0;
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px #fff;
+}
+
+.container2 .card .content p {
+    font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px #fff;
+}
+
+.container2 .card .content ul li {
+    list-style: none;
+}
+
+.container2 .card .content li {
+    margin-left: 45px;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 10px;
+}
+
+/* DIPLO & Gryffin */
+.container3 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 440px;
+    grid-gap: 85px;
+}
+
+.container3 .card {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container3 .card .img-box {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.container3 .card:hover .img-box {
+    opacity: 0.8;
+}
+
+.container3 .card .img-box img {
+    width: 100%;
+}
+
+
+.container3 .card .content {
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.container3 .card:hover .content {
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.container3 .card .content h2 {
+    font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    padding: 0;
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px #fff;
+}
+
+.container3 .card .content p {
+    font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px #fff;
+}
+
+.container3 .card .content ul li {
+    list-style: none;
+}
+
+.container3 .card .content li {
+    margin-left: 45px;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 10px;
+}
+
+.container4 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 440px;
+    grid-gap: 85px;
+}
+
+.container4 .card {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container4 .card .img-box {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.container4 .card:hover .img-box {
+    opacity: 0.8;
+}
+
+.container4 .card .img-box img {
+    width: 100%;
+}
+
+
+.container4 .card .content {
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.container4 .card:hover .content {
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.container4 .card .content h2 {
+    font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    padding: 0;
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px #fff;
+}
+
+.container4 .card .content p {
+    font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px #fff;
+}
+
+.container4 .card .content ul li {
+    list-style: none;
+}
+
+.container4 .card .content li {
+    margin-left: 45px;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 10px;
+}
+
+/* Gryffin */
+.container5 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 440px;
+    grid-gap: 85px;
+}
+
+.container5 .card {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container5 .card .img-box {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.container5 .card:hover .img-box {
+    opacity: 0.8;
+}
+
+.container5 .card .img-box img {
+    width: 100%;
+}
+
+
+.container5 .card .content {
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.container5 .card:hover .content {
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.container5 .card .content h2 {
+    font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    padding: 0;
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px #fff;
+}
+
+.container5 .card .content p {
+    font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px #fff;
+}
+
+.container5 .card .content ul li {
+    list-style: none;
+}
+
+.container5 .card .content li {
+    margin-left: 45px;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 10px;
+}
+
+/* San Holo & Marshmello */
+.container6 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 440px;
+    grid-gap: 85px;
+}
+
+.container6 .card {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container6 .card .img-box {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.container6 .card:hover .img-box {
+    opacity: 0.8;
+}
+
+.container6 .card .img-box img {
+    width: 100%;
+}
+
+
+.container6 .card .content {
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.container6 .card:hover .content {
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.container6 .card .content h2 {
+    font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    padding: 0;
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px #fff;
+}
+
+.container6 .card .content p {
+    font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px #fff;
+}
+
+.container6 .card .content ul li {
+    list-style: none;
+}
+
+.container6 .card .content li {
+    margin-left: 45px;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 10px;
+}
+
+.container7 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 440px;
+    grid-gap: 85px;
+}
+
+.container7 .card {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container7 .card .img-box {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.container7 .card:hover .img-box {
+    opacity: 0.8;
+}
+
+.container7 .card .img-box img {
+    width: 100%;
+}
+
+
+.container7 .card .content {
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.container7 .card:hover .content {
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.container7 .card .content h2 {
+    font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    padding: 0;
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px #fff;
+}
+
+.container7 .card .content p {
+    font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px #fff;
+}
+
+.container7 .card .content ul li {
+    list-style: none;
+}
+
+.container7 .card .content li {
+    margin-left: 45px;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 10px;
+}
+
+/* Marshmello & Zedd*/
+.container8 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 440px;
+    grid-gap: 85px;
+}
+
+.container8 .card {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container8 .card .img-box {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.container8 .card:hover .img-box {
+    opacity: 0.8;
+}
+
+.container8 .card .img-box img {
+    width: 100%;
+}
+
+
+.container8 .card .content {
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.container8 .card:hover .content {
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.container8 .card .content h2 {
+    font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    padding: 0;
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px #fff;
+}
+
+.container8 .card .content p {
+    font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px #fff;
+}
+
+.container8 .card .content ul li {
+    list-style: none;
+}
+
+.container8 .card .content li {
+    margin-left: 45px;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 10px;
+}
+
+/* Zedd */
+.container9 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 440px;
+    grid-gap: 85px;
+}
+
+.container9 .card {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container9 .card .img-box {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.container9 .card:hover .img-box {
+    opacity: 0.8;
+}
+
+.container9 .card .img-box img {
+    width: 100%;
+}
+
+
+.container9 .card .content {
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.container9 .card:hover .content {
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.container9 .card .content h2 {
+    font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    padding: 0;
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px #fff;
+}
+
+.container9 .card .content p {
+    font-family: 'Contrail One', cursive;
+    font-weight: lighter;
+    color: #000;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: 2px 2px #fff;
+}
+
+.container9 .card .content ul li {
+    list-style: none;
+}
+
+.container9 .card .content li {
+    margin-left: 45px;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 10px;
+}
+
+/* The Chainsmokers */
+.container1 .card:nth-child(1) .content {
+    background: linear-gradient(0deg, #e4e4e4, transparent);
+}
+
+.container1 .card:nth-child(2) .content {
+    background: linear-gradient(0deg, #f6ae99, transparent);
+}
+
+.container1 .card:nth-child(3) .content {
+    background: linear-gradient(0deg, #0c3955, transparent);
+}
+
+.container2 .card:nth-child(1) .content {
+    background: linear-gradient(0deg, #e4e4e4, transparent);
+}
+
+.container2 .card:nth-child(2) .content {
+    background: linear-gradient(0deg, #e04747, transparent);
+}
+
+.container2 .card:nth-child(3) .content {
+    background: linear-gradient(0deg, #dfa290, transparent);
+}
+
+/* Diplo & Gryffin */
+.container3 .card:nth-child(1) .content {
+    background: linear-gradient(0deg, #e04747, transparent);
+}
+
+.container3 .card:nth-child(2) .content {
+    background: linear-gradient(0deg, #fff242, transparent);
+}
+
+.container3 .card:nth-child(3) .content {
+    background: linear-gradient(0deg, #e4e4e4, transparent);
+}
+
+.container4 .card:nth-child(1) .content {
+    background: linear-gradient(0deg, #fff242, transparent);
+}
+
+.container4 .card:nth-child(2) .content {
+    background: linear-gradient(0deg, #fff242, transparent);
+}
+
+.container4 .card:nth-child(3) .content {
+    background: linear-gradient(0deg, #fff242, transparent);
+}
+
+/* Gryffin */
+.container5 .card:nth-child(1) .content {
+    background: linear-gradient(0deg, #0c3955, transparent);
+}
+
+.container5 .card:nth-child(2) .content {
+    background: linear-gradient(0deg, #e4e4e4, transparent);
+}
+
+.container5 .card:nth-child(3) .content {
+    background: linear-gradient(0deg, #b1f3f9, transparent);
+}
+
+/* San Holo & Marshmello */
+.container6 .card:nth-child(1) .content {
+    background: linear-gradient(0deg, #e4e4e4, transparent);
+}
+
+.container6 .card:nth-child(2) .content {
+    background: linear-gradient(0deg, #dfa290, transparent);
+}
+
+.container6 .card:nth-child(3) .content {
+    background: linear-gradient(0deg, #e04747, transparent);
+}
+
+.container7 .card:nth-child(1) .content {
+    background: linear-gradient(0deg, #e4e4e4, transparent);
+}
+
+.container7 .card:nth-child(2) .content {
+    background: linear-gradient(0deg, #45a834, transparent);
+}
+
+.container7 .card:nth-child(3) .content {
+    background: linear-gradient(0deg, #e4e4e4, transparent);
+}
+
+/* Marshmello & Zedd */
+.container8 .card:nth-child(1) .content {
+    background: linear-gradient(0deg, #ffdb3f, transparent);
+}
+
+.container8 .card:nth-child(2) .content {
+    background: linear-gradient(0deg, #e4e4e4, transparent);
+}
+
+.container8 .card:nth-child(3) .content {
+    background: linear-gradient(0deg, #ad2d5e, transparent);
+}
+
+/* Zedd */
+.container9 .card:nth-child(1) .content {
+    background: linear-gradient(0deg, #ffdb3f, transparent);
+}
+
+.container9 .card:nth-child(2) .content {
+    background: linear-gradient(0deg, #e4e4e4, transparent);
+}
+
+.container9 .card:nth-child(3) .content {
+    background: linear-gradient(0deg, #e4e4e4, transparent);
+}
+
+/* Jscript */
+#currenttime1,
+#currenttime2,
+#currenttime3,
+#currenttime4,
+#currenttime5,
+#currenttime6,
+#currenttime7,
+#currenttime8,
+#currenttime9,
+#currenttime10,
+#currenttime11,
+#currenttime12,
+#currenttime13,
+#currenttime14,
+#currenttime15,
+#currenttime16,
+#currenttime17,
+#currenttime18,
+#currenttime19,
+#currenttime20,
+#currenttime21,
+#currenttime22,
+#currenttime23,
+#currenttime24,
+#currenttime25,
+#currenttime26,
+#currenttime27 {
+    float: left;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Contrail One', cursive;
+    font-size: 20px;
+}
+
+#slashtime1,
+#slashtime2,
+#slashtime3,
+#slashtime4,
+#slashtime5,
+#slashtime6,
+#slashtime7,
+#slashtime8,
+#slashtime9,
+#slashtime10,
+#slashtime11,
+#slashtime12,
+#slashtime13,
+#slashtime14,
+#slashtime15,
+#slashtime16,
+#slashtime17,
+#slashtime18,
+#slashtime19,
+#slashtime20,
+#slashtime21,
+#slashtime22,
+#slashtime23,
+#slashtime24,
+#slashtime25,
+#slashtime26,
+#slashtime27 {
+    float: left;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Contrail One', cursive;
+    font-size: 20px;
+}
+
+#duration1,
+#duration2,
+#duration3,
+#duration4,
+#duration5,
+#duration6,
+#duration7,
+#duration8,
+#duration9,
+#duration10,
+#duration11,
+#duration12,
+#duration13,
+#duration14,
+#duration15,
+#duration16,
+#duration17,
+#duration18,
+#duration19,
+#duration20,
+#duration21,
+#duration22,
+#duration23,
+#duration24,
+#duration25,
+#duration26,
+#duration27 {
+    float: left;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Contrail One', cursive;
+    font-size: 20px;
+}
+
+/* PreAnimation */
+.openmodalnav {
+    animation: openmodalnav 1s;
+}
+
+.closemodalnav {
+    animation: closemodalnav 1s;
+}
+
+.shownavigation {
+    animation: shownavigation 500ms;
+}
+
+.showedmtext {
+    animation: showedmtext 500ms;
+}
+
+.closenavigation {
+    animation: closenavigation 500ms;
+}
+
+.closeedmtext {
+    animation: closeedmtext 500ms;
+}
+
+/* Animation */
+@keyframes scaleimg {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes shakehead {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(25deg);
+    }
+
+    75% {
+        transform: rotate(-25deg);
+    }
+
+    100% {
+        transform: rotate(-25deg);
+    }
+}
+
+@keyframes openmodalnav {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes closemodalnav {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
+
+@keyframes shownavigation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes showedmtext {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes closenavigation {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes closeedmtext {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

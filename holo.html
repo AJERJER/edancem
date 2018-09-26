@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EDM</title>
+    <link href="https://fonts.googleapis.com/css?family=Notable" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/edmcss.css" media="screen and (min-width: 992px)">
+    <link rel="stylesheet" href="css/edmcsssmall.css" media="screen and (min-width: 320px) and (max-width: 600px)">
+    <link rel="stylesheet" href="css/edmcsstablet.css" media='screen and (max-width: 768px)'>
+</head>
+
+<body bgcolor="#000">
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- Navigation -->
+    <div id="nav">
+        <p id="navigation" onclick="closenav()"><i class="fas fa-headphones"></i></p>
+        <br><br><br>
+        <div id="edmtext">
+            <p id="edm1" onclick="chain()">THE CHAINSMOKERS</p>
+            <p id="edm2" onclick="diplo()">DIPLO</p>
+            <p id="edm3" onclick="gryffin()">GRYFFIN</p>
+            <p id="edm4" onclick="mello()">MARSHMELLO</p>
+            <p id="edm5" onclick="holo()">SAN HOLO</p>
+            <p id="edm6" onclick="zedd()">ZEDD</p>
+            <p id="edm7" onclick="music()">MUSIC</p>
+        </div>
+    </div>
+
+    <div id="sanholo">
+        <p id="sanholop" style="cursor:pointer;" onclick="opennav()">SAN HOLO</p>
+        <div id="sanholoright">
+            <div id="sanholoimg">
+                <img src="img/sanholo.png" alt="San Holo">
+            </div>
+        </div>
+        <div id="sanhololeft">
+            <p>Sander van Dijck (born 26 November 1990), better known by his stage name San Holo, is a Dutch DJ,
+                musician, record producer and composer from Zoetermeer. He gained international recognition for his
+                remix of Dr. Dre's "The Next Episode", which currently has over 175 million views on YouTube.
+                <br><br>
+                He has released music on several record labels including Spinnin' Records, OWSLA, Barong Family, and
+                Monstercat. He also founded bitbird, a label which has released several of his singles including "Still
+                Looking" and "Light". San Holo's first EP, Cosmos, was released via Heroic on 18 September 2014 and was
+                in the Top 100 Electronic category of iTunes.
+            </p>
+        </div>
+    </div>
+
+    <script src="js/modaledm.js"></script>
+    <script>
+        $(function () {
+            setTimeout(function () {
+                $('#sanholo').fadeIn(2000);
+                $('#sanholo').style.display = 'block';
+            }, 500)
+        })
+    </script>
+</body>
+
+</html>

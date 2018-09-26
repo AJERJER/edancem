@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EDM</title>
+    <link href="https://fonts.googleapis.com/css?family=Notable" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/edmcss.css" media="screen and (min-width: 992px)">
+    <link rel="stylesheet" href="css/edmcsssmall.css" media="screen and (min-width: 320px) and (max-width: 600px)">
+    <link rel="stylesheet" href="css/edmcsstablet.css" media='screen and (max-width: 768px)'>
+</head>
+
+<body bgcolor="#000">
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- Navigation -->
+    <div id="nav">
+        <p id="navigation" onclick="closenav()"><i class="fas fa-headphones"></i></p>
+        <br><br><br>
+        <div id="edmtext">
+            <p id="edm1" onclick="chain()">THE CHAINSMOKERS</p>
+            <p id="edm2" onclick="diplo()">DIPLO</p>
+            <p id="edm3" onclick="gryffin()">GRYFFIN</p>
+            <p id="edm4" onclick="mello()">MARSHMELLO</p>
+            <p id="edm5" onclick="holo()">SAN HOLO</p>
+            <p id="edm6" onclick="zedd()">ZEDD</p>
+            <p id="edm7" onclick="music()">MUSIC</p>
+        </div>
+    </div>
+
+    <div id="gryffin">
+        <p id="gryffinp" style="cursor:pointer;" onclick="opennav()">GRYFFIN</p>
+        <div id="gryffinright">
+            <div id="gryffinimg">
+                <img src="img/gryffin.png" alt="Gryffin">
+            </div>
+        </div>
+        <div id="gryffinleft">
+            <p>Dan Griffith, known by his stage name Gryffin (often stylized as GRYFFIN), is an American DJ, record
+                producer and musician.
+                <br><br>
+                Gryffin grew up as a classically trained pianist and learned to play the guitar at an early age. He
+                played in bands to initially hone his instrumental abilities. He studied electrical engineering at the
+                University of Southern California where he took much of his leisure time in his dorm room to work on
+                music.
+                <br><br>
+                When asked on his key lessons of music production, he said "At the beginning, I just released music
+                with the main goal of having my friends play it at college parties and I never would have imagined it
+                would get to this point". He made his 'world' debut at the SnowGlobe Music Festival 2015. He moved to
+                Los Angeles to be closer to his label and management.
+            </p>
+        </div>
+    </div>
+
+    <script src="js/modaledm.js"></script>
+    <script>
+        $(function () {
+            setTimeout(function () {
+                $('#gryffin').fadeIn(2000);
+                $('#gryffin').style.display = 'block';
+            }, 500)
+        })
+    </script>
+</body>
+
+</html>

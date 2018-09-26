@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EDM</title>
+    <link href="https://fonts.googleapis.com/css?family=Notable" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/edmcss.css" media="screen and (min-width: 992px)">
+    <link rel="stylesheet" href="css/edmcsssmall.css" media="screen and (min-width: 320px) and (max-width: 600px)">
+    <link rel="stylesheet" href="css/edmcsstablet.css" media='screen and (max-width: 768px)'>
+</head>
+
+<body bgcolor="#000">
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- Navigation -->
+    <div id="nav">
+        <p id="navigation" onclick="closenav()"><i class="fas fa-headphones"></i></p>
+        <br><br><br>
+        <div id="edmtext">
+            <p id="edm1" onclick="chain()">THE CHAINSMOKERS</p>
+            <p id="edm2" onclick="diplo()">DIPLO</p>
+            <p id="edm3" onclick="gryffin()">GRYFFIN</p>
+            <p id="edm4" onclick="mello()">MARSHMELLO</p>
+            <p id="edm5" onclick="holo()">SAN HOLO</p>
+            <p id="edm6" onclick="zedd()">ZEDD</p>
+            <p id="edm7" onclick="music()">MUSIC</p>
+        </div>
+    </div>
+
+    <div id="chainsmokers">
+        <p id="chainsmokersp" style="cursor:pointer;" onclick="opennav()">THE CHAINSMOKERS</p>
+        <div id="chainsmokersright">
+            <div id="chainsmokersimg">
+                <img src="img/chainsmokers.png" alt="The Chainsmokers">
+            </div>
+        </div>
+        <div id="chainsmokersleft">
+            <p>The Chainsmokers are an American DJ and production duo consisting of Alex Pall and Andrew Taggart.
+                <br><br>
+                Alexander "Alex" Pall was born on May 16, 1985 (age 33). He is The Chainsmokers' DJ. According to
+                Billboard magazine, Pall was raised in Westchester County, New York as the "son of an art dealer
+                and a
+                stay-at-home mom.
+                <br><br>
+                Andrew "Drew" Taggart, born December 31, 1989 (age 28), was raised in Freeport, Maine. He serves as
+                The
+                Chainsmokers' producer[citation needed], writer and vocalist. His mother is a teacher and his
+                father
+                sold prosthetics.He was turned onto EDM at the age of 15 while abroad in Argentina, where he was
+                introduced to the music of David Guetta, Daft Punk and Trentemøller.
+            </p>
+        </div>
+    </div>
+
+    <script src="js/modaledm.js"></script>
+    <script>
+        $(function () {
+            setTimeout(function () {
+                $('#chainsmokers').fadeIn(2000);
+                $('#chainsmokers').style.display = 'block';
+            }, 500)
+        })
+    </script>
+</body>
+
+</html>

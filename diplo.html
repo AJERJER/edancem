@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EDM</title>
+    <link href="https://fonts.googleapis.com/css?family=Notable" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/edmcss.css" media="screen and (min-width: 992px)">
+    <link rel="stylesheet" href="css/edmcsssmall.css" media="screen and (min-width: 320px) and (max-width: 600px)">
+    <link rel="stylesheet" href="css/edmcsstablet.css" media='screen and (max-width: 768px)'>
+</head>
+
+<body bgcolor="#000">
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- Navigation -->
+    <div id="nav">
+        <p id="navigation" onclick="closenav()"><i class="fas fa-headphones"></i></p>
+        <br><br><br>
+        <div id="edmtext">
+            <p id="edm1" onclick="chain()">THE CHAINSMOKERS</p>
+            <p id="edm2" onclick="diplo()">DIPLO</p>
+            <p id="edm3" onclick="gryffin()">GRYFFIN</p>
+            <p id="edm4" onclick="mello()">MARSHMELLO</p>
+            <p id="edm5" onclick="holo()">SAN HOLO</p>
+            <p id="edm6" onclick="zedd()">ZEDD</p>
+            <p id="edm7" onclick="music()">MUSIC</p>
+        </div>
+    </div>
+
+    <div id="diplo">
+        <p id="diplop" style="cursor:pointer;" onclick="opennav()">DIPLO</p>
+        <div id="diploright">
+            <div id="diploimg">
+                <img src="img/diplo.png" alt="Diplo">
+            </div>
+        </div>
+        <div id="diploleft">
+            <p>Thomas Wesley Pentz (born November 10, 1978), better known by his stage name Diplo, is an American DJ,
+                record producer, songwriter, and record executive based in Los Angeles, California.
+                <br><br>
+                He is the co-creator and lead member of the dancehall music group Major Lazer, and along with producer
+                and DJ Skrillex, formed the electronic duo Jack Ü. He founded and manages record company Mad Decent, as
+                well as co-founding the non-profit organization Heaps Decent. Among other jobs, he has worked as a
+                schoolteacher in Philadelphia.
+                <br><br>
+                His 2013 EP Revolution debuted at number 68 on the US Billboard 200. The song was later featured in a
+                commercial for Hyundai and is featured on the WWE 2K16 soundtrack.</p>
+        </div>
+    </div>
+
+    <script src="js/modaledm.js"></script>
+    <script>
+        $(function () {
+            setTimeout(function () {
+                $('#diplo').fadeIn(2000);
+                $('#diplo').style.display = 'block';
+            }, 500)
+        })
+    </script>
+</body>
+
+</html>

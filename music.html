@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EDM</title>
+    <link href="https://fonts.googleapis.com/css?family=Notable" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/edmcss.css" media="screen and (min-width: 992px)">
+    <link rel="stylesheet" href="css/edmcsssmall.css" media="screen and (min-width: 320px) and (max-width: 600px)">
+    <link rel="stylesheet" href="css/edmcsstablet.css" media='screen and (max-width: 768px)'>
+    <style>
+        html,
+        body {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body bgcolor='#000'>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- Navigation -->
+    <div id="nav">
+        <p id="navigation" onclick="closenav()"><i class="fas fa-headphones"></i></p>
+        <br><br><br>
+        <div id="edmtext">
+            <p id="edm1" onclick="chain()">THE CHAINSMOKERS</p>
+            <p id="edm2" onclick="diplo()">DIPLO</p>
+            <p id="edm3" onclick="gryffin()">GRYFFIN</p>
+            <p id="edm4" onclick="mello()">MARSHMELLO</p>
+            <p id="edm5" onclick="holo()">SAN HOLO</p>
+            <p id="edm6" onclick="zedd()">ZEDD</p>
+            <p id="edm7" onclick="music()">MUSIC</p>
+        </div>
+    </div>
+
+    <div id="musics">
+        <p id="musicmenu" onclick="opennav()">EDM</p>
+        <!-- The Chainsmokers -->
+        <div class="container1">
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/chain/know.png" alt="All We Know">
+                </div>
+                <div class="content">
+                    <h2>The Chainsmokers</h2>
+                    <p>All We Know</p>
+                    <span id="currenttime1"></span>
+                    <span id="slashtime1"> | </span>
+                    <span id="duration1"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio1()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio1()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio1()"><i class="fas fa-square"></i></li>
+                        <audio id="audio1" src="img/music/chain/know.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/chain/blood.png" alt="Bloodstream">
+                </div>
+                <div class="content">
+                    <h2>The Chainsmokers</h2>
+                    <p>Bloodstream</p>
+                    <span id="currenttime2"></span>
+                    <span id="slashtime2"> | </span>
+                    <span id="duration2"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio2()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio2()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio2()"><i class="fas fa-square"></i></li>
+                        <audio id="audio2" src="img/music/chain/blood.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/chain/hates.png" alt="Everybody Hates Me">
+                </div>
+                <div class="content">
+                    <h2>The Chainsmokers</h2>
+                    <p>Everybody Hates Me</p>
+                    <span id="currenttime3"></span>
+                    <span id="slashtime3"> | </span>
+                    <span id="duration3"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio3()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio3()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio3()"><i class="fas fa-square"></i></li>
+                        <audio id="audio3" src="img/music/chain/hates.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container2">
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/chain/save.png" alt="Save Yourself">
+                </div>
+                <div class="content">
+                    <h2>The Chainsmokers</h2>
+                    <p>Save Yourself</p>
+                    <span id="currenttime4"></span>
+                    <span id="slashtime4"> | </span>
+                    <span id="duration4"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio4()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio4()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio4()"><i class="fas fa-square"></i></li>
+                        <audio id="audio4" src="img/music/chain/save.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/chain/sick.png" alt="Sick Boy">
+                </div>
+                <div class="content">
+                    <h2>The Chainsmokers</h2>
+                    <p>Sick Boy</p>
+                    <span id="currenttime5"></span>
+                    <span id="slashtime5"> | </span>
+                    <span id="duration5"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio5()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio5()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio5()"><i class="fas fa-square"></i></li>
+                        <audio id="audio5" src="img/music/chain/sick.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/chain/one.png" alt="The One">
+                </div>
+                <div class="content">
+                    <h2>The Chainsmokers</h2>
+                    <p>The One</p>
+                    <span id="currenttime6"></span>
+                    <span id="slashtime6"> | </span>
+                    <span id="duration6"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio6()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio6()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio6()"><i class="fas fa-square"></i></li>
+                        <audio id="audio6" src="img/music/chain/one.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- DIPLO -->
+        <div class="container3">
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/diplo/right.png" alt="Get It Right">
+                </div>
+                <div class="content">
+                    <h2>Diplo ft. MØ</h2>
+                    <p>Get It Right</p>
+                    <span id="currenttime7"></span>
+                    <span id="slashtime7"> | </span>
+                    <span id="duration7"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio7()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio7()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio7()"><i class="fas fa-square"></i></li>
+                        <audio id="audio7" src="img/music/diplo/right.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/diplo/u.png" alt="Mind">
+                </div>
+                <div class="content">
+                    <h2>Skrillex & Diplo ft. Kai</h2>
+                    <p>Mind</p>
+                    <span id="currenttime8"></span>
+                    <span id="slashtime8"> | </span>
+                    <span id="duration8"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio8()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio8()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio8()"><i class="fas fa-square"></i></li>
+                        <audio id="audio8" src="img/music/diplo/mind.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/diplo/revolution.png" alt="Revolution">
+                </div>
+                <div class="content">
+                    <h2>Diplo ft Faustix & Imanos and Kai</h2>
+                    <p>Revolution</p>
+                    <span id="currenttime9"></span>
+                    <span id="slashtime9"> | </span>
+                    <span id="duration9"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio9()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio9()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio9()"><i class="fas fa-square"></i></li>
+                        <audio id="audio9" src="img/music/diplo/revolution.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container4">
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/diplo/u.png" alt="To Ü">
+                </div>
+                <div class="content">
+                    <h2>Skrillex & Diplo ft. Aluna George</h2>
+                    <p>To Ü</p>
+                    <span id="currenttime10"></span>
+                    <span id="slashtime10"> | </span>
+                    <span id="duration10"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio10()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio10()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio10()"><i class="fas fa-square"></i></li>
+                        <audio id="audio10" src="img/music/diplo/tou.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/diplo/u.png" alt="Where Are Ü Now">
+                </div>
+                <div class="content">
+                    <h2>Skrillex & Diplo ft. Justin Bieber</h2>
+                    <p>Where Are Ü Now</p>
+                    <span id="currenttime11"></span>
+                    <span id="slashtime11"> | </span>
+                    <span id="duration11"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio11()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio11()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio11()"><i class="fas fa-square"></i></li>
+                        <audio id="audio11" src="img/music/diplo/whereareu.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Gryffin -->
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/gryffin/moment.png" alt="Just For a Moment">
+                </div>
+                <div class="content">
+                    <h2>Gryffin ft. Iselin</h2>
+                    <p>Just For a Moment</p>
+                    <span id="currenttime12"></span>
+                    <span id="slashtime12"> | </span>
+                    <span id="duration12"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio12()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio12()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio12()"><i class="fas fa-square"></i></li>
+                        <audio id="audio12" src="img/music/gryffin/moment.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Gryffin -->
+        <div class="container5">
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/gryffin/compares.png" alt="Nobody Compares To You">
+                </div>
+                <div class="content">
+                    <h2>Gryffin ft. Katie Pearlman</h2>
+                    <p>Nobody Compares To You</p>
+                    <span id="currenttime13"></span>
+                    <span id="slashtime13"> | </span>
+                    <span id="duration13"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio13()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio13()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio13()"><i class="fas fa-square"></i></li>
+                        <audio id="audio13" src="img/music/gryffin/compares.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/gryffin/tie.png" alt="Tie Me Down">
+                </div>
+                <div class="content">
+                    <h2>Gryffin ft. Elley Duhé</h2>
+                    <p>Tie Me Down</p>
+                    <span id="currenttime14"></span>
+                    <span id="slashtime14"> | </span>
+                    <span id="duration14"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio14()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio14()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio14()"><i class="fas fa-square"></i></li>
+                        <audio id="audio14" src="img/music/gryffin/tie.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/gryffin/heart.png" alt="Whole Heart">
+                </div>
+                <div class="content">
+                    <h2>Gryffin ft. Bipolar Sunshine</h2>
+                    <p>Whole Heart</p>
+                    <span id="currenttime15"></span>
+                    <span id="slashtime15"> | </span>
+                    <span id="duration15"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio15()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio15()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio15()"><i class="fas fa-square"></i></li>
+                        <audio id="audio15" src="img/music/gryffin/heart.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- San Holo -->
+        <div class="container6">
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/holo/free.jpg" alt="Forever Free">
+                </div>
+                <div class="content">
+                    <h2>San Holo ft. Duskus</h2>
+                    <p>Forever Free</p>
+                    <span id="currenttime16"></span>
+                    <span id="slashtime16"> | </span>
+                    <span id="duration16"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio16()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio16()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio16()"><i class="fas fa-square"></i></li>
+                        <audio id="audio16" src="img/music/holo/free.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/holo/face.jpg" alt="I Still See Your Face">
+                </div>
+                <div class="content">
+                    <h2>San Holo</h2>
+                    <p>I Still See Your Face</p>
+                    <span id="currenttime17"></span>
+                    <span id="slashtime17"> | </span>
+                    <span id="duration17"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio17()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio17()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio17()"><i class="fas fa-square"></i></li>
+                        <audio id="audio17" src="img/music/holo/face.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/holo/liftme.jpg" alt="Lift Me From The Ground">
+                </div>
+                <div class="content">
+                    <h2>San Holo ft. Sofie Winterson</h2>
+                    <p>Lift Me From The Ground</p>
+                    <span id="currenttime18"></span>
+                    <span id="slashtime18"> | </span>
+                    <span id="duration18"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio18()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio18()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio18()"><i class="fas fa-square"></i></li>
+                        <audio id="audio18" src="img/music/holo/liftme.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container7">
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/holo/light.png" alt="Light">
+                </div>
+                <div class="content">
+                    <h2>San Holo</h2>
+                    <p>Light</p>
+                    <span id="currenttime19"></span>
+                    <span id="slashtime19"> | </span>
+                    <span id="duration19"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio19()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio19()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio19()"><i class="fas fa-square"></i></li>
+                        <audio id="audio19" src="img/music/holo/light.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/holo/right.jpg" alt="Right Here Right Now">
+                </div>
+                <div class="content">
+                    <h2>San Holo ft. Taska Black</h2>
+                    <p>Right Here Right Now</p>
+                    <span id="currenttime20"></span>
+                    <span id="slashtime20"> | </span>
+                    <span id="duration20"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio20()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio20()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio20()"><i class="fas fa-square"></i></li>
+                        <audio id="audio20" src="img/music/holo/right.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Marshmello -->
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/mello/fly.png" alt="Fly">
+                </div>
+                <div class="content">
+                    <h2>Marshmello ft. Leah Culver</h2>
+                    <p>Fly</p>
+                    <span id="currenttime21"></span>
+                    <span id="slashtime21"> | </span>
+                    <span id="duration21"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio21()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio21()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio21()"><i class="fas fa-square"></i></li>
+                        <audio id="audio21" src="img/music/mello/fly.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Marshmello -->
+        <div class="container8">
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/mello/happier.png" alt="Happier">
+                </div>
+                <div class="content">
+                    <h2>Marshmello ft. Bastille</h2>
+                    <p>Happier</p>
+                    <span id="currenttime22"></span>
+                    <span id="slashtime22"> | </span>
+                    <span id="duration22"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio22()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio22()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio22()"><i class="fas fa-square"></i></li>
+                        <audio id="audio22" src="img/music/mello/happier.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/mello/silence.png" alt="Silence">
+                </div>
+                <div class="content">
+                    <h2>Marshmello ft. Khalid</h2>
+                    <p>Silence</p>
+                    <span id="currenttime23"></span>
+                    <span id="slashtime23"> | </span>
+                    <span id="duration23"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio23()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio23()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio23()"><i class="fas fa-square"></i></li>
+                        <audio id="audio23" src="img/music/mello/silence.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Zedd -->
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/zedd/beautiful.png" alt="Beautiful Now">
+                </div>
+                <div class="content">
+                    <h2>Zedd ft. Jon Bellion</h2>
+                    <p>Beautiful Now</p>
+                    <span id="currenttime24"></span>
+                    <span id="slashtime24"> | </span>
+                    <span id="duration24"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio24()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio24()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio24()"><i class="fas fa-square"></i></li>
+                        <audio id="audio24" src="img/music/zedd/beautiful.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Zedd -->
+        <div class="container9">
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/zedd/happy.png" alt="Happy Now">
+                </div>
+                <div class="content">
+                    <h2>Zedd & Elley Duhé</h2>
+                    <p>Happy Now</p>
+                    <span id="currenttime25"></span>
+                    <span id="slashtime25"> | </span>
+                    <span id="duration25"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio25()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio25()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio25()"><i class="fas fa-square"></i></li>
+                        <audio id="audio25" src="img/music/zedd/happy.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/zedd/Stay.png" alt="Stay">
+                </div>
+                <div class="content">
+                    <h2>Zedd ft. Alessia Cara</h2>
+                    <p>Stay</p>
+                    <span id="currenttime26"></span>
+                    <span id="slashtime26"> | </span>
+                    <span id="duration26"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio26()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio26()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio26()"><i class="fas fa-square"></i></li>
+                        <audio id="audio26" src="img/music/zedd/Stay.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-box">
+                    <img src="img/music/zedd/middle.png" alt="The Middle">
+                </div>
+                <div class="content">
+                    <h2>Zedd & Maren Morris and Grey</h2>
+                    <p>The Middle</p>
+                    <span id="currenttime27"></span>
+                    <span id="slashtime27"> | </span>
+                    <span id="duration27"></span>
+                    <br>
+                    <ul>
+                        <li id="pauseicon" onclick="pauseaudio27()"><i class="fas fa-pause"></i></li>
+                        <li id="playicon" onclick="playaudio27()"><i class="fas fa-play"></i></li>
+                        <li id="stopicon" onclick="stopaudio27()"><i class="fas fa-square"></i></li>
+                        <audio id="audio27" src="img/music/zedd/middle.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <script src="js/modaledm.js"></script>
+    <script src="js/edm.js"></script>
+    <script>
+        $(function () {
+            setTimeout(function () {
+                $('#musics').fadeIn(1000);
+                $('#musics').style.display = 'block';
+            }, 500)
+        })
+    </script>
+</body>
+
+</html>
